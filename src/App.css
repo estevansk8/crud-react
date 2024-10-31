@@ -21,8 +21,8 @@
 }
 
 .nav-link.active {
-  font-weight: bold; /* Torna o texto mais destacado */
-  color: #007bff; /* Pode ser a cor padrão do seu tema */
-  background-color: rgba(0, 123, 255, 0.1); /* Fundo leve para destacar */
+  font-weight: bold; 
+  color: #007bff; 
+  background-color: rgba(0, 123, 255, 0.1); 
 }
 

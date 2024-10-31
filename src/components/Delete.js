@@ -12,19 +12,19 @@ function Delete() {
         axios.get(`https://6722b5182108960b9cc55782.mockapi.io/filmes/${id}`)
             .then(res => {
                 setFilme(res.data);
-                setShowModal(true); // Abre o modal de confirmação
+                setShowModal(true); 
             })
             .catch(() => {
                 alert("Filme não encontrado!");
-                navigate('/'); // Volta para a página inicial se o filme não for encontrado
+                navigate('/'); 
             });
     };
 
     const handleDelete = () => {
         axios.delete(`https://6722b5182108960b9cc55782.mockapi.io/filmes/${id}`)
             .then(() => {
-                setShowModal(false); // Fecha o modal
-                navigate('/'); // Redireciona para a página inicial após a deleção
+                setShowModal(false); 
+                navigate('/'); 
             })
             .catch(err => console.log(err));
     };
@@ -58,7 +58,7 @@ function Delete() {
                             </div>
                             <div className="modal-footer">
                                 <button onClick={handleDelete} className="btn btn-danger">Deletar</button>
-                                <button onClick={() => navigate('/')} className="btn btn-secondary">Cancelar</button>                            </div>
+                                <button onClick={() => navigate('/')} className="btn btn-secondary">Cancelar</button></div>
                         </div>
                     </div>
                 </div>

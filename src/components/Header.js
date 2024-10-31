@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 function Header() {
-    const location = useLocation(); // Obtém a localização atual
+    const location = useLocation();
 
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
